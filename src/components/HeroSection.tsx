@@ -39,7 +39,7 @@ export default function HeroSection() {
   const scrollNext = () => emblaApi?.scrollNext();
 
   return (
-    <div className="relative w-full px-1 h-[240px] ">
+    <div className="relative w-full px-1 ">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex">
           {hero_image.map((image, index) => (
