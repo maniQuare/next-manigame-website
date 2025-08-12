@@ -1,13 +1,14 @@
 
 import Header from "@/components/Header";
-
+import HeroSection from "@/components/HeroSection";
 
 
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-gray-800">
       <div><Header/></div>
+      <div><HeroSection/></div>
     </div>
   );
 }
