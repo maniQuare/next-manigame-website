@@ -1,29 +1,17 @@
-"use clinet";
-
-import { MdOutlineNotificationsActive } from "react-icons/md";
-
-import { IoWalletOutline } from "react-icons/io5";
-
-import { LiaFileDownloadSolid } from "react-icons/lia";
+"use client"
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center bg-black text-white h-14">
-      <div className="p-4 font-semibold">
-        <h1>MANIGAME</h1>
-      </div>
+    <header className="flex items-center justify-between bg-black text-white px-6 py-3">
+      <div className="font-bold text-lg">bsf1010pro</div>
 
-      <div className="flex gap-4 p-3.5">
-        <div className="text-2xl">
-          <MdOutlineNotificationsActive />
-        </div>
-        <div className="text-2xl">
-          <IoWalletOutline />
-        </div>
-        <div className="text-2xl">
-          <LiaFileDownloadSolid />
-        </div>
+      <div className="flex items-center gap-4">
+        <button className="bg-yellow-500 px-3 py-1 rounded text-black">
+          Agent Offer
+        </button>
+
+        <button className="text-sm">Sign Out</button>
       </div>
-    </div>
-  );
+    </header>
+  )
 }
